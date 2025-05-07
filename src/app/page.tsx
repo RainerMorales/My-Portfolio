@@ -1,9 +1,7 @@
-import Toggle from "../components/Toggle"
 import Link from "next/link";
 import { FaFacebookSquare } from "react-icons/fa";
 import { FaSquareGithub } from "react-icons/fa6";
 import { FaSquareInstagram } from "react-icons/fa6";
-import { BsMortarboardFill } from "react-icons/bs";
 import { FaLaptopCode } from "react-icons/fa";
 import { IoBookSharp } from "react-icons/io5";
 import { Badge } from "@/components/ui/badge";
