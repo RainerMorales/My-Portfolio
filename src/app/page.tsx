@@ -1,103 +1,159 @@
-import Image from "next/image";
-
+import Toggle from "../components/Toggle"
+import Link from "next/link";
+import { FaFacebookSquare } from "react-icons/fa";
+import { FaSquareGithub } from "react-icons/fa6";
+import { FaSquareInstagram } from "react-icons/fa6";
+import { BsMortarboardFill } from "react-icons/bs";
+import { FaLaptopCode } from "react-icons/fa";
+import { IoBookSharp } from "react-icons/io5";
+import { Badge } from "@/components/ui/badge";
+import { BlurFade } from "@/components/magicui/blur-fade";
+import { TypingAnimation } from "@/components/magicui/typing-animation";
+import { AuroraText } from "@/components/magicui/aurora-text";
+import { FaArrowRightLong } from "react-icons/fa6";
+import { CgWebsite } from "react-icons/cg";
+import Card from "./Components/Card";
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <>
+      <BlurFade
+        inView
+        className="grid gap-6 justify-center mt-20 max-w-2xl m-auto"
+      >
+        <div className="m-auto">
+          <img className="w-40 rounded-full" src="Profile.jpg" alt="" />
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
+        <div className="text-center">
+          <TypingAnimation className="flex items-center h-10 font-bold text-3xl">
+            Hi! I'm Rainer 😎
+          </TypingAnimation>
+          <div className="text-md ">
+            <AuroraText>Front-End</AuroraText> Developer
+          </div>
+
+          <div className="text-md opacity-80">Bataan,Philippines</div>
+          <div className="flex justify-center mt-6 gap-2">
+            <a href="https://github.com/RainerMorales">
+              <FaSquareGithub size={30} />
+            </a>
+            <a href="https://www.facebook.com/share/1KPaDDbDwH/">
+              <FaFacebookSquare size={30} />
+            </a>
+            <a href="https://www.instagram.com/ka.rainerr?igsh=MWw1dXVqbGtwd2xsdQ==">
+              <FaSquareInstagram size={30} />
+            </a>
+          </div>
+        </div>
+      </BlurFade>
+      <div className="mt-20 p-4 grid grid-cols-1 lg:grid-cols-3 lg:grid-row-3 gap-4 max-w-4xl m-auto ">
+        <BlurFade
+          delay={0.15}
+          inView
+          className="lg:col-span-3  space-y-4 p-6 border-2 rounded-md "
         >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
+          <h1 className="font-bold text-xl flex items-center gap-2">
+            <IoBookSharp />
+            Summary
+          </h1>
+          <p className="opacity-80">
+            I'm a front-end developer passionate about creating interactive and
+            visually engaging web experiences. I specialize in React, Vite,
+            Tailwind CSS, and Framer Motion, bringing modern designs to life
+            with smooth animations and responsive layouts. Always eager to learn
+            and improve, I focus on building user-friendly interfaces that
+            enhance the web experience
+          </p>
+        </BlurFade>
+        <BlurFade
+          delay={0.15 * 2}
+          inView
+          className="lg:col-span-1 lg:row-span-2 space-y-4 p-6 border-2 rounded-md  "
         >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
+          <h1 className="font-bold text-xl flex items-center gap-2">
+            <FaLaptopCode />
+            Tech Stack
+          </h1>
+          <div className="space-x-2">
+            <span className="opacity-80 ">Front-End</span>
+            <ul className="flex  flex-wrap gap-2 mt-1">
+              {[
+                "HTML",
+                "CSS",
+                "Javascript",
+                "Typescript",
+                "Tailwind CSS",
+                "Bootstrap",
+                "React",
+                "Vite",
+                "Node",
+              ].map((tool) => (
+                <li className="text-center" key={tool}>
+                  <Badge className="">{tool}</Badge>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div className="space-x-2">
+            <span className="opacity-80 ">Developer Tools</span>
+            <ul className="flex flex-wrap gap-2 mt-1">
+              {[
+                "Git",
+                "GitHub",
+                "VS Code",
+                "NPM",
+                "Vercel",
+                "Magic UI",
+                "Daisy UI",
+                "Material UI",
+                "Framer Motion",
+                "React Bits",
+              ].map((tool) => (
+                <li className="text-center" key={tool}>
+                  <Badge className="">{tool}</Badge>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </BlurFade>
+        <BlurFade
+          delay={0.15 * 4}
+          inView
+          className="lg:col-span-2 lg:row-span-2 p-2 border-2 rounded-md"
         >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+          <div className="flex items-center justify-between p-4">
+            <div className="flex items-center gap-2 text-xl  font-bold">
+              <CgWebsite />
+              Recent Projects
+            </div>
+            <Link
+              className="text-sm flex items-center gap-2 link link-hover font-mono opacity-80"
+              href={"/Projects"}
+            >
+              View All <FaArrowRightLong />
+            </Link>
+          </div>
+          <Card
+            names={"Todo-List"}
+            description={`My to-do list app, built with React, Tailwind CSS, and ShadCN UI, 
+              lets users create and delete tasks, with persistent storage using the browser's localStorage.`}
+            pic={
+              <img
+                className="w-full h-30 object-cover object-top"
+                src="todo.png"
+                alt="image"
+              />
+            }
+            link={<a href="https://react-todolist2025.vercel.app/">Visit</a>}
+            badge={
+              <>
+                <Badge>React</Badge>
+                <Badge>Tailwind</Badge>
+                <Badge>Shadcn</Badge>
+              </>
+            }
+          ></Card>
+        </BlurFade>
+      </div>
+    </>
   );
 }
