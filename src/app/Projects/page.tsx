@@ -1,10 +1,11 @@
-
+"use client";
 import { BlurFade } from "@/components/magicui/blur-fade";
 import { FaArrowLeftLong } from "react-icons/fa6";
 import { CgWebsite } from "react-icons/cg";
 import { Badge } from "@/components/ui/badge";
 import Card from "../Components/Card";
 import Link from "next/link";
+import Image from "next/image";
 function Projects() {
   return (
     <>
@@ -27,13 +28,15 @@ function Projects() {
             <Card
               names={"Todo-List"}
               description={
-                "My to-do list app, built with React, Tailwind CSS, and ShadCN UI, lets users create and delete tasks, with persistent storage using the browser's localStorage."
+                "My to-do list app, built with React, Tailwind CSS, and ShadCN UI, lets users create and delete tasks, with persistent storage using the browser localStorage."
               }
               pic={
-                <img
-                  className="w-full h-full object-cover"
-                  src="todo.png"
-                  alt="image"
+                <Image
+                  className="w-full h-[120px]  object-top object-cover "
+                  src="/Todo.png"
+                  height={500}
+                  width={500}
+                  alt="Todo"
                 />
               }
               link={
@@ -57,13 +60,15 @@ function Projects() {
             <Card
               names={"Weather App"}
               description={
-                "I'm developing a weather app using React and the OpenWeather API to provide real-time weather updates with an intuitive user interface"
+                "Im developing a weather app using React and the OpenWeather API to provide real-time weather updates with an intuitive user interface"
               }
               pic={
-                <img
-                  className="w-full h-full lg:object-cover object-contain"
-                  src="Weather.png"
-                  alt="image"
+                <Image
+                  className="w-full h-[120px]  object-top object-cover "
+                  src="/Weather.png"
+                  height={500}
+                  width={500}
+                  alt="Todo"
                 />
               }
               link={
@@ -91,10 +96,12 @@ function Projects() {
                 "This is my first landing page of Fika shop using React"
               }
               pic={
-                <img
-                  className="w-full h-full lg:object-cover object-fill"
-                  src="fika.png"
-                  alt="image"
+                <Image
+                  className="w-full h-[120px]  object-top object-cover "
+                  src="/Fika.png"
+                  height={500}
+                  width={500}
+                  alt="Todo"
                 />
               }
               link={<a href="https://fika-shop.vercel.app/">Visit</a>}

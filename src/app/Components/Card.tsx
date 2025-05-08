@@ -1,5 +1,5 @@
+"use client"
 import { ReactElement } from "react";
-
 interface cardProps {
   names: string;
   description: string;

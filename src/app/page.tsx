@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { FaFacebookSquare } from "react-icons/fa";
 import { FaSquareGithub } from "react-icons/fa6";
 import { FaSquareInstagram } from "react-icons/fa6";
@@ -19,7 +20,14 @@ export default function Home() {
         className="grid gap-6 justify-center mt-20 max-w-2xl m-auto"
       >
         <div className="m-auto">
-          <img className="w-40 rounded-full" src="Profile.jpg" alt="" />
+          <Image
+            className="rounded-full"
+            src="/Profile.jpg"
+            width={200}
+            height={80}
+            alt="profile"
+          ></Image>
+          {/* <img className="w-40 rounded-full" src="Profile.jpg" alt="" /> */}
         </div>
         <div className="text-center">
           <TypingAnimation className="flex items-center h-10 font-bold text-3xl">
@@ -54,7 +62,7 @@ export default function Home() {
             Summary
           </h1>
           <p className="opacity-80">
-            I'm a front-end developer passionate about creating interactive and
+            Im a front-end developer passionate about creating interactive and
             visually engaging web experiences. I specialize in React, Vite,
             Tailwind CSS, and Framer Motion, bringing modern designs to life
             with smooth animations and responsive layouts. Always eager to learn
@@ -132,13 +140,16 @@ export default function Home() {
           </div>
           <Card
             names={"Todo-List"}
-            description={`My to-do list app, built with React, Tailwind CSS, and ShadCN UI, 
-              lets users create and delete tasks, with persistent storage using the browser's localStorage.`}
+            description={
+              "My to-do list app, built with React, Tailwind CSS, and ShadCN UI,lets users create and delete tasks, with persistent storage using the browsers localStorage."
+            }
             pic={
-              <img
-                className="w-full h-30 object-cover object-top"
-                src="todo.png"
-                alt="image"
+              <Image
+                className="w-full h-[120px]  object-top object-cover "
+                src="/Todo.png"
+                height={500}
+                width={500}
+                alt="Todo"
               />
             }
             link={<a href="https://react-todolist2025.vercel.app/">Visit</a>}
