@@ -9,7 +9,7 @@ import Image from "next/image";
 function Projects() {
   return (
     <>
-      <div className="mt- max-w-4xl m-auto  rounded-sm">
+      <div className="max-w-4xl m-auto  rounded-sm">
         <div className="flex items-center p-4 space-x-4">
           <Link
             className="text-sm link link-hover font-mono opacity-80 flex items-center hover:opacity-80 gap-2"
@@ -27,9 +27,7 @@ function Projects() {
           <BlurFade inView>
             <Card
               names={"Todo-List"}
-              description={
-                "My to-do list app, built with React, Tailwind CSS, and ShadCN UI, lets users create and delete tasks, with persistent storage using the browser localStorage."
-              }
+              description={`My to-do list app, built with React, Tailwind CSS, and ShadCN UI, lets users create and delete tasks, with persistent storage using the browser localStorage.`}
               pic={
                 <Image
                   className="w-full h-[120px]  object-top object-cover "
@@ -59,16 +57,14 @@ function Projects() {
           <BlurFade delay={0.15} inView>
             <Card
               names={"Weather App"}
-              description={
-                "Im developing a weather app using React and the OpenWeather API to provide real-time weather updates with an intuitive user interface"
-              }
+              description={`Im developing a weather app using React and the OpenWeather API to provide real-time weather updates with an intuitive user interface`}
               pic={
                 <Image
                   className="w-full h-[120px]  object-top object-cover "
                   src="/Weather.png"
                   height={500}
                   width={500}
-                  alt="Todo"
+                  alt="Weather"
                 />
               }
               link={
@@ -92,16 +88,14 @@ function Projects() {
           <BlurFade delay={0.15 * 2} inView>
             <Card
               names={"Fika Shop"}
-              description={
-                "This is my first landing page of Fika shop using React"
-              }
+              description={`This is my first landing page of Fika shop using React`}
               pic={
                 <Image
                   className="w-full h-[120px]  object-top object-cover "
                   src="/Fika.png"
                   height={500}
                   width={500}
-                  alt="Todo"
+                  alt="Fika"
                 />
               }
               link={<a href="https://fika-shop.vercel.app/">Visit</a>}

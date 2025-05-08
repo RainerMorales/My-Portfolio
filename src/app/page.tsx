@@ -31,7 +31,7 @@ export default function Home() {
         </div>
         <div className="text-center">
           <TypingAnimation className="flex items-center h-10 font-bold text-3xl">
-            Hi! I'm Rainer 😎
+            Hi! Im Rainer 😎
           </TypingAnimation>
           <div className="text-md ">
             <AuroraText>Front-End</AuroraText> Developer
