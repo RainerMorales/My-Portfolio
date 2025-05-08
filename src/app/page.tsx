@@ -12,6 +12,7 @@ import { AuroraText } from "@/components/magicui/aurora-text";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { CgWebsite } from "react-icons/cg";
 import Card from "./Components/Card";
+import { Roboto } from "next/font/google";
 export default function Home() {
   return (
     <>
@@ -27,17 +28,16 @@ export default function Home() {
             height={80}
             alt="profile"
           ></Image>
-          {/* <img className="w-40 rounded-full" src="Profile.jpg" alt="" /> */}
         </div>
         <div className="text-center">
-          <TypingAnimation className="flex items-center h-10 font-bold text-3xl">
-            Hi! Im Rainer 😎
+          <TypingAnimation className="flex items-center h-10 text-4xl">
+            Hi! Im Rainer
           </TypingAnimation>
-          <div className="text-md ">
+          <div className="text-xl font-bold ">
             <AuroraText>Front-End</AuroraText> Developer
           </div>
 
-          <div className="text-md opacity-80">Bataan,Philippines</div>
+          <div className="text-md opacity-60">Bataan,Philippines</div>
           <div className="flex justify-center mt-6 gap-2">
             <a href="https://github.com/RainerMorales">
               <FaSquareGithub size={30} />
@@ -55,13 +55,13 @@ export default function Home() {
         <BlurFade
           delay={0.15}
           inView
-          className="lg:col-span-3  space-y-4 p-6 border-2 rounded-md "
+          className="lg:col-span-3  space-y-4 p-6 border rounded-md "
         >
           <h1 className="font-bold text-xl flex items-center gap-2">
             <IoBookSharp />
             Summary
           </h1>
-          <p className="opacity-80">
+          <p className="opacity-60">
             Im a front-end developer passionate about creating interactive and
             visually engaging web experiences. I specialize in React, Vite,
             Tailwind CSS, and Framer Motion, bringing modern designs to life
@@ -73,15 +73,15 @@ export default function Home() {
         <BlurFade
           delay={0.15 * 2}
           inView
-          className="lg:col-span-1 lg:row-span-2 space-y-4 p-6 border-2 rounded-md  "
+          className="lg:col-span-1 lg:row-span-2 space-y-4 p-6 border rounded-md  "
         >
           <h1 className="font-bold text-xl flex items-center gap-2">
             <FaLaptopCode />
             Tech Stack
           </h1>
           <div className="space-x-2">
-            <span className="opacity-80 ">Front-End</span>
-            <ul className="flex  flex-wrap gap-2 mt-1">
+            <span className="opacity-60">Front-End</span>
+            <ul className="flex flex-wrap gap-2 mt-1">
               {[
                 "HTML",
                 "CSS",
@@ -90,8 +90,7 @@ export default function Home() {
                 "Tailwind CSS",
                 "Bootstrap",
                 "React",
-                "Vite",
-                "Node",
+                "Next JS",
               ].map((tool) => (
                 <li className="text-center" key={tool}>
                   <Badge className="">{tool}</Badge>
@@ -100,7 +99,7 @@ export default function Home() {
             </ul>
           </div>
           <div className="space-x-2">
-            <span className="opacity-80 ">Developer Tools</span>
+            <span className="opacity-60 ">Developer Tools</span>
             <ul className="flex flex-wrap gap-2 mt-1">
               {[
                 "Git",
@@ -124,7 +123,7 @@ export default function Home() {
         <BlurFade
           delay={0.15 * 4}
           inView
-          className="lg:col-span-2 lg:row-span-2 p-2 border-2 rounded-md"
+          className="lg:col-span-2 lg:row-span-2 p-2 border rounded-md"
         >
           <div className="flex items-center justify-between p-4">
             <div className="flex items-center gap-2 text-xl  font-bold">
@@ -132,7 +131,7 @@ export default function Home() {
               Recent Projects
             </div>
             <Link
-              className="text-sm flex items-center gap-2 link link-hover font-mono opacity-80"
+              className="text-sm flex items-center gap-2 link link-hover font-mono hover:opacity-60"
               href={"/Projects"}
             >
               View All <FaArrowRightLong />

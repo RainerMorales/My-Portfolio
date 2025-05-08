@@ -12,7 +12,7 @@ function Projects() {
       <div className="max-w-4xl m-auto  rounded-sm">
         <div className="flex items-center p-4 space-x-4">
           <Link
-            className="text-sm link link-hover font-mono opacity-80 flex items-center hover:opacity-80 gap-2"
+            className="text-sm link link-hover font-mono flex items-center hover:opacity-60 gap-2"
             href={"/"}
           >
             <FaArrowLeftLong />
@@ -39,7 +39,7 @@ function Projects() {
               }
               link={
                 <a
-                  className="link link-hover font-mono opacity-80"
+                  className="link link-hover font-mono"
                   href="https://react-todolist2025.vercel.app/"
                 >
                   Visit
@@ -69,7 +69,7 @@ function Projects() {
               }
               link={
                 <a
-                  className="link link-hover font-mono opacity-80"
+                  className="link link-hover font-mono"
                   href="https://weather-app2025.vercel.app/"
                 >
                   Visit
