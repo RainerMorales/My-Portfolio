@@ -12,7 +12,6 @@ import { AuroraText } from "@/components/magicui/aurora-text";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { CgWebsite } from "react-icons/cg";
 import Card from "./Components/Card";
-import { Roboto } from "next/font/google";
 export default function Home() {
   return (
     <>
