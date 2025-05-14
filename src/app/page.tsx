@@ -30,7 +30,7 @@ export default function Home() {
         </div>
         <div className="text-center">
           <TypingAnimation className="flex items-center h-10 text-4xl">
-            Hi! Im Rainer
+            Hi! Im Rainer 😎
           </TypingAnimation>
           <div className="text-xl font-bold ">
             <AuroraText>Front-End</AuroraText> Developer
@@ -41,7 +41,7 @@ export default function Home() {
             <a href="https://github.com/RainerMorales">
               <FaSquareGithub size={30} />
             </a>
-            <a href="https://www.facebook.com/share/1KPaDDbDwH/">
+            <a href="https://www.facebook.com/ka.rainerr">
               <FaFacebookSquare size={30} />
             </a>
             <a href="https://www.instagram.com/ka.rainerr?igsh=MWw1dXVqbGtwd2xsdQ==">
@@ -60,7 +60,7 @@ export default function Home() {
             <IoBookSharp />
             Summary
           </h1>
-          <p className="opacity-60">
+          <p className="opacity-80">
             Im a front-end developer passionate about creating interactive and
             visually engaging web experiences. I specialize in React, Vite,
             Tailwind CSS, and Framer Motion, bringing modern designs to life
@@ -79,7 +79,7 @@ export default function Home() {
             Tech Stack
           </h1>
           <div className="space-x-2">
-            <span className="opacity-60">Front-End</span>
+            <span className="opacity-80">Front-End</span>
             <ul className="flex flex-wrap gap-2 mt-1">
               {[
                 "HTML",
@@ -90,6 +90,7 @@ export default function Home() {
                 "Bootstrap",
                 "React",
                 "Next JS",
+                "Firebase",
               ].map((tool) => (
                 <li className="text-center" key={tool}>
                   <Badge className="">{tool}</Badge>
@@ -98,7 +99,7 @@ export default function Home() {
             </ul>
           </div>
           <div className="space-x-2">
-            <span className="opacity-60 ">Developer Tools</span>
+            <span className="opacity-80 ">Developer Tools</span>
             <ul className="flex flex-wrap gap-2 mt-1">
               {[
                 "Git",
@@ -137,9 +138,9 @@ export default function Home() {
             </Link>
           </div>
           <Card
-            names={"Todo-List"}
+            names={"TodoNow"}
             description={
-              "My to-do list app, built with React, Tailwind CSS, and ShadCN UI,lets users create and delete tasks, with persistent storage using the browsers localStorage."
+              "Im currently working on this project that have a Authentication and Firestore using Firebase"
             }
             pic={
               <Image
@@ -147,7 +148,7 @@ export default function Home() {
                 src="/Todo.png"
                 height={500}
                 width={500}
-                alt="Todo"
+                alt="TodoNow"
               />
             }
             link={<a href="https://react-todolist2025.vercel.app/">Visit</a>}
@@ -155,6 +156,7 @@ export default function Home() {
               <>
                 <Badge>React</Badge>
                 <Badge>Tailwind</Badge>
+                <Badge>Firebase</Badge>
                 <Badge>Shadcn</Badge>
               </>
             }

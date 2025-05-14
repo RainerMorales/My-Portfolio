@@ -26,11 +26,11 @@ function Projects() {
         <div className="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 p-4   gap-4 ">
           <BlurFade inView>
             <Card
-              names={"Todo-List"}
-              description={`My to-do list app, built with React, Tailwind CSS, and ShadCN UI, lets users create and delete tasks, with persistent storage using the browser localStorage.`}
+              names={"TodoNow"}
+              description={`Im currently working on this project that have a Authentication and Firestore using Firebase`}
               pic={
                 <Image
-                  className="w-full h-[120px]  object-top object-cover "
+                  className="w-full  object-top object-cover "
                   src="/Todo.png"
                   height={500}
                   width={500}
@@ -60,7 +60,7 @@ function Projects() {
               description={`Im developing a weather app using React and the OpenWeather API to provide real-time weather updates with an intuitive user interface`}
               pic={
                 <Image
-                  className="w-full h-[120px]  object-top object-cover "
+                  className="w-full  object-top object-cover "
                   src="/Weather.png"
                   height={500}
                   width={500}
@@ -88,10 +88,10 @@ function Projects() {
           <BlurFade delay={0.15 * 2} inView>
             <Card
               names={"Fika Shop"}
-              description={`This is my first landing page of Fika shop using React`}
+              description={`My Simple landing page for Fikashop using React `}
               pic={
                 <Image
-                  className="w-full h-[120px]  object-top object-cover "
+                  className="w-full  object-top object-cover "
                   src="/Fika.png"
                   height={500}
                   width={500}
