@@ -31,7 +31,7 @@ function Projects() {
               pic={
                 <Image
                   className="w-full  object-top object-cover "
-                  src="/Todo.png"
+                  src="/TodoNow.png"
                   height={500}
                   width={500}
                   alt="Todo"
@@ -49,6 +49,7 @@ function Projects() {
                 <>
                   <Badge>React</Badge>
                   <Badge>Tailwind</Badge>
+                  <Badge>Firebase</Badge>
                   <Badge>Shadcn</Badge>
                 </>
               }

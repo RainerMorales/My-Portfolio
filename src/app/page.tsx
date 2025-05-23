@@ -30,7 +30,7 @@ export default function Home() {
         </div>
         <div className="text-center">
           <TypingAnimation className="flex items-center h-10 text-4xl">
-            Hi! Im Rainer 😎
+            Hi! Im Rainer👋
           </TypingAnimation>
           <div className="text-xl font-bold ">
             <AuroraText>Front-End</AuroraText> Developer
