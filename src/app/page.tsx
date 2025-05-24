@@ -41,7 +41,7 @@ export default function Home() {
             <a href="https://github.com/RainerMorales">
               <FaSquareGithub size={30} />
             </a>
-            <a href="https://www.facebook.com/ka.rainerr">
+            <a href="https://www.facebook.com/Ka.RainerM02">
               <FaFacebookSquare size={30} />
             </a>
             <a href="https://www.instagram.com/ka.rainerr?igsh=MWw1dXVqbGtwd2xsdQ==">
@@ -145,7 +145,7 @@ export default function Home() {
             pic={
               <Image
                 className="w-full h-[120px]  object-top object-cover "
-                src="/Todo.png"
+                src="/TodoNow.png"
                 height={500}
                 width={500}
                 alt="TodoNow"
