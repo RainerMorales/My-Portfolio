@@ -40,7 +40,7 @@ function Projects() {
               link={
                 <a
                   className="link link-hover font-mono"
-                  href="https://react-todolist2025.vercel.app/"
+                  href="https://todonow-v1.vercel.app"
                 >
                   Visit
                 </a>
@@ -57,12 +57,12 @@ function Projects() {
           </BlurFade>
           <BlurFade delay={0.15} inView>
             <Card
-              names={"Weather App"}
+              names={"Forcasa"}
               description={`Im developing a weather app using React and the OpenWeather API to provide real-time weather updates with an intuitive user interface`}
               pic={
                 <Image
                   className="w-full  object-top object-cover "
-                  src="/Weather.png"
+                  src="/Forcasa.png"
                   height={500}
                   width={500}
                   alt="Weather"
@@ -71,7 +71,7 @@ function Projects() {
               link={
                 <a
                   className="link link-hover font-mono"
-                  href="https://weather-app2025.vercel.app/"
+                  href="https://forcasa.vercel.app/"
                 >
                   Visit
                 </a>
@@ -99,7 +99,7 @@ function Projects() {
                   alt="Fika"
                 />
               }
-              link={<a href="https://fika-shop.vercel.app/">Visit</a>}
+              link={<a href="https://fika-v1.vercel.app/">Visit</a>}
               badge={
                 <>
                   <Badge>React</Badge>

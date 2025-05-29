@@ -33,7 +33,7 @@ export default function Home() {
             Hi! Im Rainer👋
           </TypingAnimation>
           <div className="text-xl font-bold ">
-            <AuroraText>Front-End</AuroraText> Developer
+            Web <AuroraText> Developer</AuroraText>
           </div>
 
           <div className="text-md opacity-60">Bataan,Philippines</div>
@@ -151,7 +151,7 @@ export default function Home() {
                 alt="TodoNow"
               />
             }
-            link={<a href="https://react-todolist2025.vercel.app/">Visit</a>}
+            link={<a href="https://todonow-v1.vercel.app">Visit</a>}
             badge={
               <>
                 <Badge>React</Badge>
