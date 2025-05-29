@@ -30,7 +30,7 @@ function Projects() {
               description={`Im currently working on this project that have a Authentication and Firestore using Firebase`}
               pic={
                 <Image
-                  className="w-full  object-top object-cover "
+                  className="object-cover w-full"
                   src="/TodoNow.png"
                   height={500}
                   width={500}
@@ -61,7 +61,7 @@ function Projects() {
               description={`Im developing a weather app using React and the OpenWeather API to provide real-time weather updates with an intuitive user interface`}
               pic={
                 <Image
-                  className="w-full  object-top object-cover "
+                  className="object-cover w-full"
                   src="/Forcasa.png"
                   height={500}
                   width={500}
@@ -92,7 +92,7 @@ function Projects() {
               description={`My Simple landing page for Fikashop using React `}
               pic={
                 <Image
-                  className="w-full  object-top object-cover "
+                  className="object-cover w-full"
                   src="/Fika.png"
                   height={500}
                   width={500}
