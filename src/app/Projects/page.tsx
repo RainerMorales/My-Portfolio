@@ -26,7 +26,49 @@ function Projects() {
         <div className="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 p-4   gap-4 ">
           <BlurFade inView>
             <Card
-              names={"TodoNow"}
+              names={
+                <div className="flex justify-between items-center w-full">
+                  <div>Cometalk</div>
+                  <div>
+                    <Badge variant={"destructive"}>Ongoing</Badge>
+                  </div>
+                </div>
+              }
+              description={`Real-time messaging system with live chat functionality`}
+              pic={
+                <Image
+                  className="object-cover w-full"
+                  src="/image.png"
+                  height={500}
+                  width={500}
+                  alt="Todo"
+                />
+              }
+              link={
+                <a className="link link-hover font-mono" href="#">
+                  Visit
+                </a>
+              }
+              badge={
+                <>
+                  <Badge>Next js</Badge>
+                  <Badge>Tailwind</Badge>
+                  <Badge>Firebase</Badge>
+                  <Badge>Shadcn</Badge>
+                </>
+              }
+            ></Card>
+          </BlurFade>
+          <BlurFade inView>
+            <Card
+              names={
+                <div className="flex justify-between items-center w-full">
+                  <div>Todonow</div>
+                  <div>
+                    <Badge className="bg-yellow-600">In Progress</Badge>
+                  </div>
+                </div>
+              }
               description={`Im currently working on this project that have a Authentication and Firestore using Firebase`}
               pic={
                 <Image
@@ -57,12 +99,19 @@ function Projects() {
           </BlurFade>
           <BlurFade delay={0.15} inView>
             <Card
-              names={"Forcasa"}
+              names={
+                <div className="flex justify-between items-center w-full">
+                  <div>Forcasa</div>
+                  <div>
+                    <Badge className="bg-green-600">Finished</Badge>
+                  </div>
+                </div>
+              }
               description={`Im developing a weather app using React and the OpenWeather API to provide real-time weather updates with an intuitive user interface`}
               pic={
                 <Image
                   className="object-cover w-full"
-                  src="/Forcasa.png"
+                  src="/forcasa.png"
                   height={500}
                   width={500}
                   alt="Weather"
@@ -88,7 +137,14 @@ function Projects() {
           </BlurFade>
           <BlurFade delay={0.15 * 2} inView>
             <Card
-              names={"Fika Shop"}
+              names={
+                <div className="flex justify-between items-center w-full">
+                  <div>Coffee Shop</div>
+                  <div>
+                    <Badge className="bg-green-600">Finished</Badge>
+                  </div>
+                </div>
+              }
               description={`My Simple landing page for Fikashop using React `}
               pic={
                 <Image

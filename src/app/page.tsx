@@ -138,7 +138,14 @@ export default function Home() {
             </Link>
           </div>
           <Card
-            names={"TodoNow"}
+            names={
+              <div className="flex justify-between items-center w-full">
+                <div>Todonow</div>
+                <div>
+                  <Badge className="bg-yellow-600">In Progress</Badge>
+                </div>
+              </div>
+            }
             description={
               "Im currently working on this project that have a Authentication and Firestore using Firebase"
             }
