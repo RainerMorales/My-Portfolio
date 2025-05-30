@@ -110,7 +110,7 @@ function Projects() {
               description={`Im developing a weather app using React and the OpenWeather API to provide real-time weather updates with an intuitive user interface`}
               pic={
                 <Image
-                  className="object-cover w-full"
+                  className="object-cover w-full "
                   src="/forcasa.png"
                   height={500}
                   width={500}
