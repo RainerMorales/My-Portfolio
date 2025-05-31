@@ -29,13 +29,10 @@ export default function Home() {
           ></Image>
         </div>
         <div className="text-center">
-          <TypingAnimation className="flex items-center h-10 text-4xl">
-            Hi! Im Rainer👋
-          </TypingAnimation>
-          <div className="text-xl font-bold ">
+          <div className="text-4xl font-bold ">
             Web <AuroraText> Developer</AuroraText>
           </div>
-
+          <div className="text-md opacity-60">Rainer Morales</div>
           <div className="text-md opacity-60">Bataan,Philippines</div>
           <div className="flex justify-center mt-6 gap-2">
             <a href="https://github.com/RainerMorales">
@@ -60,13 +57,13 @@ export default function Home() {
             <IoBookSharp />
             Summary
           </h1>
-          <p className="opacity-80">
-            Im a front-end developer passionate about creating interactive and
-            visually engaging web experiences. I specialize in React, Vite,
-            Tailwind CSS, and Framer Motion, bringing modern designs to life
-            with smooth animations and responsive layouts. Always eager to learn
-            and improve, I focus on building user-friendly interfaces that
-            enhance the web experience
+          <p className="opacity-80 ">
+            Hi, I'm Rainer — a front-end developer focused on building
+            interactive and responsive web apps using React (or Next.js) and
+            Firebase. I enjoy crafting smooth, clean interfaces with Tailwind
+            CSS and Framer Motion, bringing ideas to life through animations and
+            modern design. I'm always learning and improving, with a passion for
+            building user-friendly experiences.
           </p>
         </BlurFade>
         <BlurFade

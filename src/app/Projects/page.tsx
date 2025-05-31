@@ -103,7 +103,7 @@ function Projects() {
                 <div className="flex justify-between items-center w-full">
                   <div>Forcasa</div>
                   <div>
-                    <Badge className="bg-green-600">Finished</Badge>
+                    <Badge className="bg-green-600">Ready</Badge>
                   </div>
                 </div>
               }
@@ -141,7 +141,7 @@ function Projects() {
                 <div className="flex justify-between items-center w-full">
                   <div>Coffee Shop</div>
                   <div>
-                    <Badge className="bg-green-600">Finished</Badge>
+                    <Badge className="bg-green-600">Ready</Badge>
                   </div>
                 </div>
               }
