@@ -7,7 +7,6 @@ import { FaLaptopCode } from "react-icons/fa";
 import { IoBookSharp } from "react-icons/io5";
 import { Badge } from "@/components/ui/badge";
 import { BlurFade } from "@/components/magicui/blur-fade";
-import { TypingAnimation } from "@/components/magicui/typing-animation";
 import { AuroraText } from "@/components/magicui/aurora-text";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { CgWebsite } from "react-icons/cg";
@@ -32,17 +31,16 @@ export default function Home() {
           <div className="text-4xl font-bold ">
             Web <AuroraText> Developer</AuroraText>
           </div>
-          <div className="text-md opacity-60">Rainer Morales</div>
           <div className="text-md opacity-60">Bataan,Philippines</div>
-          <div className="flex justify-center mt-6 gap-2">
+          <div className="flex justify-center mt-6 gap-4">
             <a href="https://github.com/RainerMorales">
-              <FaSquareGithub size={30} />
+              <FaSquareGithub size={34} />
             </a>
             <a href="https://www.facebook.com/Ka.RainerM02">
-              <FaFacebookSquare size={30} />
+              <FaFacebookSquare size={34} />
             </a>
             <a href="https://www.instagram.com/ka.rainerr?igsh=MWw1dXVqbGtwd2xsdQ==">
-              <FaSquareInstagram size={30} />
+              <FaSquareInstagram size={34} />
             </a>
           </div>
         </div>
@@ -57,13 +55,12 @@ export default function Home() {
             <IoBookSharp />
             Summary
           </h1>
-          <p className="opacity-80 ">
-            Hi, I'm Rainer — a front-end developer focused on building
+          <p className="opacity-80">
+            Hi!, Im Rainer Morales, a front-end developer focused on building
             interactive and responsive web apps using React (or Next.js) and
             Firebase. I enjoy crafting smooth, clean interfaces with Tailwind
             CSS and Framer Motion, bringing ideas to life through animations and
-            modern design. I'm always learning and improving, with a passion for
-            building user-friendly experiences.
+            modern design.
           </p>
         </BlurFade>
         <BlurFade

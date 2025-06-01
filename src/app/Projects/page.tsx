@@ -30,7 +30,7 @@ function Projects() {
                 <div className="flex justify-between items-center w-full">
                   <div>Cometalk</div>
                   <div>
-                    <Badge variant={"destructive"}>Ongoing</Badge>
+                    <Badge className="bg-yellow-500 text-white">Progress</Badge>
                   </div>
                 </div>
               }
@@ -65,7 +65,7 @@ function Projects() {
                 <div className="flex justify-between items-center w-full">
                   <div>Todonow</div>
                   <div>
-                    <Badge className="bg-yellow-600">In Progress</Badge>
+                    <Badge className="bg-yellow-500 text-white">Progress</Badge>
                   </div>
                 </div>
               }
@@ -103,7 +103,7 @@ function Projects() {
                 <div className="flex justify-between items-center w-full">
                   <div>Forcasa</div>
                   <div>
-                    <Badge className="bg-green-600">Ready</Badge>
+                    <Badge className="bg-green-600 text-white">Ready</Badge>
                   </div>
                 </div>
               }
@@ -141,7 +141,7 @@ function Projects() {
                 <div className="flex justify-between items-center w-full">
                   <div>Coffee Shop</div>
                   <div>
-                    <Badge className="bg-green-600">Ready</Badge>
+                    <Badge className="bg-green-600 text-white">Ready</Badge>
                   </div>
                 </div>
               }
