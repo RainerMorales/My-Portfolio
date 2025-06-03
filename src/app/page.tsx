@@ -134,14 +134,17 @@ export default function Home() {
           <Card
             names={
               <div className="flex justify-between items-center w-full">
-                <div>Todonow</div>
+                <div>MemoLeaf</div>
                 <div>
-                  <Badge className="bg-yellow-600">In Progress</Badge>
+                  <Badge className="bg-yellow-500">Progress</Badge>
                 </div>
               </div>
             }
             description={
-              "Im currently working on this project that have a Authentication and Firestore using Firebase"
+              `A simple note-taking app built with React, 
+                Tailwind CSS, ShadCN, and Firebase. It lets users write, save, and 
+                manage notes with a clean, responsive design. Notes are saved in the 
+                cloud using Firebase`
             }
             pic={
               <Image
