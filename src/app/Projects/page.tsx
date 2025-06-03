@@ -3,6 +3,10 @@ import { BlurFade } from "@/components/magicui/blur-fade";
 import { FaArrowLeftLong } from "react-icons/fa6";
 import { CgWebsite } from "react-icons/cg";
 import { Badge } from "@/components/ui/badge";
+import { FaLeaf } from "react-icons/fa";
+import { GiTalk } from "react-icons/gi";
+import { TiWeatherWindyCloudy } from "react-icons/ti";
+import { FiCoffee } from "react-icons/fi";
 import Card from "../Components/Card";
 import Link from "next/link";
 import Image from "next/image";
@@ -28,7 +32,12 @@ function Projects() {
             <Card
               names={
                 <div className="flex justify-between items-center w-full">
-                  <div>Cometalk</div>
+                  <div className="flex items-center gap-2">
+                    <span>
+                      <GiTalk />
+                    </span>
+                    Cometalk
+                  </div>
                   <div>
                     <Badge className="bg-yellow-500">Progress</Badge>
                   </div>
@@ -63,14 +72,18 @@ function Projects() {
             <Card
               names={
                 <div className="flex justify-between items-center w-full">
-                  <div>MemoLeaf</div>
+                  <div className="flex items-center gap-2">
+                    <span>
+                      <FaLeaf />
+                    </span>
+                    MemoLeaf
+                  </div>
                   <div>
                     <Badge className="bg-yellow-500">Progress</Badge>
                   </div>
                 </div>
               }
-              description={`A simple note-taking app built with React, 
-                Tailwind CSS, ShadCN, and Firebase. It lets users write, save, and 
+              description={`A simple note-taking app, It lets users write, save, and 
                 manage notes with a clean, responsive design. Notes are saved in the 
                 cloud using Firebase`}
               pic={
@@ -85,7 +98,7 @@ function Projects() {
               link={
                 <a
                   className="link link-hover font-mono"
-                  href="https://todonow-v1.vercel.app"
+                  href="https://memoleaf-ph.vercel.app/login"
                 >
                   Visit
                 </a>
@@ -104,7 +117,12 @@ function Projects() {
             <Card
               names={
                 <div className="flex justify-between items-center w-full">
-                  <div>Forcasa</div>
+                  <div className="flex items-center gap-2">
+                    <span>
+                      <TiWeatherWindyCloudy />
+                    </span>
+                    Forcasa
+                  </div>
                   <div>
                     <Badge className="bg-green-600 text-white">Ready</Badge>
                   </div>
@@ -142,7 +160,12 @@ function Projects() {
             <Card
               names={
                 <div className="flex justify-between items-center w-full">
-                  <div>Coffee Shop</div>
+                  <div className="flex items-center gap-2">
+                    <span>
+                      <FiCoffee />
+                    </span>
+                    Coffee Shop
+                  </div>
                   <div>
                     <Badge className="bg-green-600 text-white">Ready</Badge>
                   </div>
