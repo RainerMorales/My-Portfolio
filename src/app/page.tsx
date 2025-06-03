@@ -149,7 +149,7 @@ export default function Home() {
             pic={
               <Image
                 className="w-full h-[120px]  object-top object-cover "
-                src="/TodoNow.png"
+                src="/memoleaf.png"
                 height={500}
                 width={500}
                 alt="TodoNow"

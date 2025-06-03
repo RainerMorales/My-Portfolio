@@ -89,7 +89,7 @@ function Projects() {
               pic={
                 <Image
                   className="object-cover w-full"
-                  src="/TodoNow.png"
+                  src="/memoleaf.png"
                   height={500}
                   width={500}
                   alt="Todo"
