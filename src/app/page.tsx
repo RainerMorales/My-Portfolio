@@ -49,24 +49,31 @@ export default function Home() {
         <BlurFade
           delay={0.15}
           inView
-          className="lg:col-span-3  space-y-4 p-6 border rounded-md "
+          className="lg:col-span-3  space-y-4 p-6 border rounded-md shadow-md "
         >
-          <h1 className="font-bold text-xl flex items-center gap-2">
-            <IoBookSharp />
-            Summary
-          </h1>
+          <div className="flex items-center justify-between ">
+            <div className="font-bold text-xl flex items-center gap-2">
+              <IoBookSharp />
+              About Me
+            </div>
+            <Link
+              className="text-sm flex items-center gap-2 link link-hover font-mono hover:opacity-60"
+              href={"/Aboutme"}
+            >
+              View All <FaArrowRightLong />
+            </Link>
+          </div>
           <p className="opacity-80">
-            Hi!, Im Rainer Morales, a front-end developer focused on building
-            interactive and responsive web apps using React (or Next.js) and
-            Firebase. I enjoy crafting smooth, clean interfaces with Tailwind
-            CSS and Framer Motion, bringing ideas to life through animations and
-            modern design.
+            Hi!👋, Im <span className="font-bold">Rainer Morales</span>, a
+            front-end developer focused on building interactive and responsive
+            web apps using React (or Next.js) and Firebase 🔥. I enjoy crafting
+            smooth, clean interfaces w.....
           </p>
         </BlurFade>
         <BlurFade
           delay={0.15 * 2}
           inView
-          className="lg:col-span-1 lg:row-span-2 space-y-4 p-6 border rounded-md  "
+          className="lg:col-span-1 lg:row-span-2 space-y-4 p-6 border rounded-md shadow-md  "
         >
           <h1 className="font-bold text-xl flex items-center gap-2">
             <FaLaptopCode />
@@ -117,7 +124,7 @@ export default function Home() {
         <BlurFade
           delay={0.15 * 4}
           inView
-          className="lg:col-span-2 lg:row-span-2 p-2 border rounded-md"
+          className="lg:col-span-2 lg:row-span-2 p-2 border rounded-md shadow-md"
         >
           <div className="flex items-center justify-between p-4">
             <div className="flex items-center gap-2 text-xl  font-bold">
@@ -140,12 +147,10 @@ export default function Home() {
                 </div>
               </div>
             }
-            description={
-              `A simple note-taking app built with React, 
+            description={`A simple note-taking app built with React, 
                 Tailwind CSS, ShadCN, and Firebase. It lets users write, save, and 
                 manage notes with a clean, responsive design. Notes are saved in the 
-                cloud using Firebase`
-            }
+                cloud using Firebase`}
             pic={
               <Image
                 className=""
@@ -155,7 +160,7 @@ export default function Home() {
                 alt="TodoNow"
               />
             }
-            link={<a href="https://todonow-v1.vercel.app">Visit</a>}
+            link={<a href="https://memoleaf-ph.vercel.app/login">Visit</a>}
             badge={
               <>
                 <Badge>React</Badge>

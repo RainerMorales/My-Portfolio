@@ -20,7 +20,7 @@ function Projects() {
             href={"/"}
           >
             <FaArrowLeftLong />
-            Home
+            Back
           </Link>
           <div className="flex items-center gap-2 text-xl">
             <CgWebsite />

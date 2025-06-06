@@ -14,12 +14,13 @@ export const AuroraText = memo(
     children,
     className = "",
     colors = [
-      "#38bdf8", // Sky-400 (base blue)
-      "#22d3ee", // Cyan-400 (aqua highlight)
-      "#0ea5e9", // Sky-500 (deeper blue for contrast)
-      "#06b6d4", // Cyan-500 (for depth)
-      "#2dd4bf", //
-    ],
+      "#38bdf8", // Sky-400
+      "#22d3ee", // Cyan-400
+      "#2dd4bf", // Teal-400
+      "#06b6d4", // Cyan-500
+      "#0ea5e9", // Sky-500
+      "#38bdf8", // Repeat start for smooth looping
+    ],    
     speed = 3,
   }: AuroraTextProps) => {
     const gradientStyle = {

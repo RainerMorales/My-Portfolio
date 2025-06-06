@@ -10,7 +10,7 @@ interface cardProps {
 function Card(props: cardProps) {
   return (
     <>
-      <div className="card border m-2 rounded-md h-90 ">
+      <div className="card border m-2 rounded-md h-90 shadow-md ">
         <figure className="h-[100%] ">
           {props.pic}
         </figure>
