@@ -20,7 +20,7 @@ export default function Home() {
       >
         <div className="m-auto">
           <Image
-            className="rounded-full"
+            className="rounded-full border-4 "
             src="/Profile.jpg"
             width={200}
             height={80}
@@ -64,10 +64,14 @@ export default function Home() {
             </Link>
           </div>
           <p className="opacity-80">
-            Hi!👋, Im <span className="font-bold">Rainer Morales</span>, a
-            front-end developer focused on building interactive and responsive
-            web apps using React (or Next.js) and Firebase 🔥. I enjoy crafting
-            smooth, clean interfaces w.....
+            Hi! Im <span className="font-bold">Rainer Morales</span>, front-end developer focused on
+            building interactive and responsive web apps using React (or
+            Next.js) and Firebase. I enjoy crafting smooth, clean interfaces
+            with Tailwind CSS and Framer Motion — bringing ideas to life through
+            animation and modern design. I graduated with a Bachelor of Science
+            in Information Technology from Eastwoods Professional College of
+            Science and Technology in July 2024 . I love playing the organ and
+            piano — music helps me stay creative and focused.
           </p>
         </BlurFade>
         <BlurFade

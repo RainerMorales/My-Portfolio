@@ -1,8 +1,9 @@
 import Link from "next/link";
 import { FaArrowLeftLong } from "react-icons/fa6";
-import { CgWebsite } from "react-icons/cg";
+import { IoBookSharp } from "react-icons/io5";
 import Image from "next/image";
 import { PiCertificateFill } from "react-icons/pi";
+import { FaGraduationCap } from "react-icons/fa6";
 import { BlurFade } from "@/components/magicui/blur-fade";
 function Aboutme() {
   return (
@@ -17,21 +18,34 @@ function Aboutme() {
             Back
           </Link>
           <div className="flex items-center gap-2 text-xl">
-            <CgWebsite />
+            <IoBookSharp />
             About Me
           </div>
         </div>
-        <div className="grid grid-cols-4 gap-4 p-6">
+        <div className="grid grid-cols-4 gap-4 p-4">
           <BlurFade className=" col-span-4 border rounded-md shadow-md p-6">
-            <div className=" opacity-80 ">
-              Hi! 👋 Im Rainer Morales, front-end developer focused on building
-              interactive and responsive web apps using React (or Next.js) and
-              Firebase 🔥. I enjoy crafting smooth, clean interfaces with
-              Tailwind CSS and Framer Motion — bringing ideas to life through
-              animation and modern design. I graduated with a Bachelor of
-              Science in Information Technology from Eastwoods Professional
-              College of Science and Technology in July 2024 🎓. I love playing
-              the organ and piano 🎹 — music helps me stay creative and focused.
+            <div className="flex items-center gap-2  font-bold text-xl">
+              <FaGraduationCap />
+              Education
+            </div>
+            <div className="flex flex-col lg:flex-row space-y-5 items-center justify-around mt-4 ">
+              <Image
+                className="rounded-full border-4"
+                src={"/eastwoods.jpg"}
+                width={120}
+                height={80}
+                alt="eastwoods logo"
+              ></Image>
+              <div className="lg:text-left text-center  ">
+                <div className="font-bold text-lg">
+                  Eastwoods Professional College of Science and
+                  Technology
+                </div>
+                <div className="opacity-80 ">
+                  Bachelor of Science in Information Technology
+                </div>
+                <div className="opacity-80">2020 - 2024</div>
+              </div>
             </div>
           </BlurFade>
           <BlurFade
@@ -39,11 +53,11 @@ function Aboutme() {
             delay={0.15 * 2}
             className="border rounded-md shadow-md p-6 col-span-4"
           >
-            <div className="flex items-center gap-2 p-4 font-bold text-xl">
+            <div className="flex items-center gap-2 font-bold text-xl">
               <PiCertificateFill />
               My Certificates
             </div>
-            <div className="flex flex-col lg:flex-row md:flex-row  items-center justify-center gap-4 ">
+            <div className="flex flex-col lg:flex-row md:flex-row  items-center justify-center gap-4 p-4">
               {[
                 { src: "/intern.jpg", alt: "intern logo" },
                 { src: "/east.jpg", alt: "east logo" },
