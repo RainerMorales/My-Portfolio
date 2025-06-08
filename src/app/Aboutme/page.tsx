@@ -5,6 +5,8 @@ import Image from "next/image";
 import { PiCertificateFill } from "react-icons/pi";
 import { FaGraduationCap } from "react-icons/fa6";
 import { BlurFade } from "@/components/magicui/blur-fade";
+import Zoom from "react-medium-image-zoom";
+import "react-medium-image-zoom/dist/styles.css";
 function Aboutme() {
   return (
     <>
@@ -18,46 +20,45 @@ function Aboutme() {
             Back
           </Link>
           <div className="flex items-center gap-2 text-xl">
-            <IoBookSharp />
-            About Me
+            <IoBookSharp></IoBookSharp>
+            About
           </div>
         </div>
         <div className="grid grid-cols-4 gap-4 p-4">
-          <BlurFade className=" col-span-4 border rounded-md shadow-md p-6">
-            <div className="flex items-center gap-2  font-bold text-xl">
+          <BlurFade className=" col-span-4 border rounded-md shadow-md p-4">
+            <div className="flex items-center gap-2  font-bold text-xl  ">
               <FaGraduationCap />
               Education
             </div>
-            <div className="flex flex-col lg:flex-row space-y-5 items-center justify-around mt-4 ">
+            <div className="flex flex-col lg:flex-row md:flex-row  items-center gap-4  mt-4">
               <Image
                 className="rounded-full border-4"
                 src={"/eastwoods.jpg"}
-                width={120}
+                width={80}
                 height={80}
                 alt="eastwoods logo"
               ></Image>
-              <div className="lg:text-left text-center  ">
-                <div className="font-bold text-lg">
-                  Eastwoods Professional College of Science and
-                  Technology
+              <div className="lg:text-left md:text-left   text-center  ">
+                <div className="font-bold ">
+                  Eastwoods Professional College of Science and Technology
                 </div>
-                <div className="opacity-80 ">
+                <div className="opacity-80 text-sm">
                   Bachelor of Science in Information Technology
                 </div>
-                <div className="opacity-80">2020 - 2024</div>
+                <div className="opacity-80 text-sm">2020 - 2024</div>
               </div>
             </div>
           </BlurFade>
           <BlurFade
             inView
             delay={0.15 * 2}
-            className="border rounded-md shadow-md p-6 col-span-4"
+            className="border rounded-md shadow-md p-4 col-span-4"
           >
-            <div className="flex items-center gap-2 font-bold text-xl">
+            <div className="flex items-center gap-2 font-bold text-xl ">
               <PiCertificateFill />
-              My Certificates
+              Certificates
             </div>
-            <div className="flex flex-col lg:flex-row md:flex-row  items-center justify-center gap-4 p-4">
+            <div className="flex flex-col lg:flex-row md:flex-row  items-center justify-center gap-4 p-4 ">
               {[
                 { src: "/intern.jpg", alt: "intern logo" },
                 { src: "/east.jpg", alt: "east logo" },
@@ -67,12 +68,14 @@ function Aboutme() {
                   key={i}
                   className="border rounded-md shadow-md w-72 h-60 relative overflow-hidden"
                 >
-                  <Image
-                    src={img.src}
-                    alt={img.alt}
-                    fill
-                    className="object-cover"
-                  ></Image>
+                  <Zoom>
+                    <Image
+                      src={img.src}
+                      alt={img.alt}
+                      fill
+                      className="object-cover transition-transform duration-300 hover:scale-110"
+                    ></Image>
+                  </Zoom>
                 </div>
               ))}
             </div>

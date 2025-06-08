@@ -11,6 +11,7 @@ import { AuroraText } from "@/components/magicui/aurora-text";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { CgWebsite } from "react-icons/cg";
 import Card from "./Components/Card";
+
 export default function Home() {
   return (
     <>
@@ -31,7 +32,7 @@ export default function Home() {
           <div className="text-4xl font-bold ">
             Web <AuroraText> Developer</AuroraText>
           </div>
-          <div className="text-md opacity-60">Bataan,Philippines</div>
+          <div className="text-md opacity-80">Bataan,Philippines</div>
           <div className="flex justify-center mt-6 gap-4">
             <a href="https://github.com/RainerMorales">
               <FaSquareGithub size={34} />
@@ -54,7 +55,7 @@ export default function Home() {
           <div className="flex items-center justify-between ">
             <div className="font-bold text-xl flex items-center gap-2">
               <IoBookSharp />
-              About Me
+              About
             </div>
             <Link
               className="text-sm flex items-center gap-2 link link-hover font-mono hover:opacity-60"
