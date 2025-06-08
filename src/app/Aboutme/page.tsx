@@ -30,7 +30,7 @@ function Aboutme() {
               <FaGraduationCap />
               Education
             </div>
-            <div className="flex flex-col lg:flex-row md:flex-row  items-center gap-4  mt-4">
+            <div className="flex flex-row items-center gap-4  mt-4">
               <Image
                 className="rounded-full border-4"
                 src={"/eastwoods.jpg"}
@@ -38,7 +38,7 @@ function Aboutme() {
                 height={80}
                 alt="eastwoods logo"
               ></Image>
-              <div className="lg:text-left md:text-left   text-center  ">
+              <div className="text-left">
                 <div className="font-bold ">
                   Eastwoods Professional College of Science and Technology
                 </div>
