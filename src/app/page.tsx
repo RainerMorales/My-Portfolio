@@ -65,11 +65,11 @@ export default function Home() {
             </Link>
           </div>
           <p className="opacity-80">
-            Hi, I'm Rainer Morales, a recent Information Technology graduate
+            Hi, Im Rainer Morales, a recent Information Technology graduate
             with internship experience in technical support. I enjoy solving
             problems using technology and learning new tools like React and
             Firebase. My goal is to grow as a front-end developer and create
-            user-friendly web applications that make people's lives easier. I'm
+            user-friendly web applications that make peoples lives easier. Im
             passionate about continuous learning and excited to contribute to
             innovative tech projects.
           </p>
