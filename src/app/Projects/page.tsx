@@ -38,15 +38,13 @@ function Projects() {
                     </span>
                     Cometalk
                   </div>
-                  <div>
-                    <Badge className="bg-yellow-500">Progress</Badge>
-                  </div>
+                  
                 </div>
               }
               description={`Real-time messaging system with live chat functionality`}
               pic={
                 <Image
-                  className="object-cover w-full"
+                  className="object-cover"
                   src="/image.png"
                   height={500}
                   width={500}
@@ -78,9 +76,7 @@ function Projects() {
                     </span>
                     MemoLeaf
                   </div>
-                  <div>
-                    <Badge className="bg-yellow-500">Progress</Badge>
-                  </div>
+                 
                 </div>
               }
               description={`A simple note-taking app, It lets users write, save, and 
@@ -88,7 +84,7 @@ function Projects() {
                 cloud using Firebase`}
               pic={
                 <Image
-                  className="object-cover w-full"
+                  className="object-cover"
                   src="/memoleaf.png"
                   height={500}
                   width={500}
@@ -123,15 +119,13 @@ function Projects() {
                     </span>
                     Forcasa
                   </div>
-                  <div>
-                    <Badge className="bg-green-600 text-white">Ready</Badge>
-                  </div>
+                 
                 </div>
               }
               description={`Im developing a weather app using React and the OpenWeather API to provide real-time weather updates with an intuitive user interface`}
               pic={
                 <Image
-                  className="object-cover w-full "
+                  className="object-cover "
                   src="/forcasa-v1.png"
                   height={500}
                   width={500}
@@ -166,15 +160,13 @@ function Projects() {
                     </span>
                     Coffee Shop
                   </div>
-                  <div>
-                    <Badge className="bg-green-600 text-white">Ready</Badge>
-                  </div>
+                
                 </div>
               }
               description={`My Simple landing page for Fikashop using React `}
               pic={
                 <Image
-                  className="object-cover w-full"
+                  className="object-cover"
                   src="/Fika.png"
                   height={500}
                   width={500}

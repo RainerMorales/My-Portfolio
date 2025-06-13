@@ -30,9 +30,9 @@ function Aboutme() {
               <FaGraduationCap />
               Education
             </div>
-            <div className="flex flex-row items-center gap-4  mt-4">
+            <div className="flex  items-center gap-4  mt-4">
               <Image
-                className="rounded-full border-4"
+                className="rounded-full border-2"
                 src={"/eastwoods.jpg"}
                 width={80}
                 height={80}

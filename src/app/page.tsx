@@ -13,7 +13,6 @@ import { CgWebsite } from "react-icons/cg";
 import Card from "./Components/Card";
 
 export default function Home() {
-
   return (
     <>
       <BlurFade
@@ -51,7 +50,7 @@ export default function Home() {
         <BlurFade
           delay={0.15}
           inView
-          className="lg:col-span-3  space-y-4 p-6 border rounded-md shadow-md "
+          className="lg:col-span-3  space-y-4 p-6 border rounded-md shadow  "
         >
           <div className="flex items-center justify-between ">
             <div className="font-bold text-xl flex items-center gap-2">
@@ -78,7 +77,7 @@ export default function Home() {
         <BlurFade
           delay={0.15 * 2}
           inView
-          className="lg:col-span-1 lg:row-span-2 space-y-4 p-6 border rounded-md shadow-md  "
+          className="lg:col-span-1 lg:row-span-2 space-y-4 p-6 border rounded-md shadow  "
         >
           <h1 className="font-bold text-xl flex items-center gap-2">
             <FaLaptopCode />
@@ -129,7 +128,7 @@ export default function Home() {
         <BlurFade
           delay={0.15 * 4}
           inView
-          className="lg:col-span-2 lg:row-span-2 p-2 border rounded-md shadow-md"
+          className="lg:col-span-2 lg:row-span-2 p-2 border rounded-md shadow"
         >
           <div className="flex items-center justify-between p-4">
             <div className="flex items-center gap-2 text-xl  font-bold">
@@ -147,9 +146,7 @@ export default function Home() {
             names={
               <div className="flex justify-between items-center w-full">
                 <div>MemoLeaf</div>
-                <div>
-                  <Badge className="bg-yellow-500">Progress</Badge>
-                </div>
+                
               </div>
             }
             description={`A simple note-taking app built with React, 
