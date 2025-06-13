@@ -33,7 +33,7 @@ export default function RootLayout({
           {children}
           <ModeToggle />
         </ThemeProvider>
-        <footer className="border-t text-center p-4 opacity-60 text-sm">
+        <footer className="border-t mt-10 text-center p-4 opacity-60 text-sm">
           <div>&copy; {years} Rainer Morales. All rights reserve</div>
           <div>Made with 💖</div>
         </footer>
