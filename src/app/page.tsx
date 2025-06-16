@@ -61,7 +61,8 @@ export default function Home() {
               className="text-sm flex items-center gap-2 link link-hover font-mono hover:opacity-60"
               href={"/Aboutme"}
             >
-              View All <FaArrowRightLong />
+              <AuroraText> View All</AuroraText>
+              <FaArrowRightLong />
             </Link>
           </div>
           <p className="opacity-80">
@@ -139,14 +140,14 @@ export default function Home() {
               className="text-sm flex items-center gap-2 link link-hover font-mono hover:opacity-60"
               href={"/Projects"}
             >
-              View All <FaArrowRightLong />
+              <AuroraText> View All</AuroraText>
+              <FaArrowRightLong />
             </Link>
           </div>
           <Card
             names={
               <div className="flex justify-between items-center w-full">
                 <div>MemoLeaf</div>
-                
               </div>
             }
             description={`A simple note-taking app built with React, 
@@ -174,7 +175,6 @@ export default function Home() {
           ></Card>
         </BlurFade>
       </div>
-      
     </>
   );
 }

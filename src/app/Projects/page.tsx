@@ -10,17 +10,18 @@ import { FiCoffee } from "react-icons/fi";
 import Card from "../Components/Card";
 import Link from "next/link";
 import Image from "next/image";
+import { AuroraText } from "@/components/magicui/aurora-text";
 function Projects() {
   return (
     <>
       <div className="max-w-4xl m-auto  rounded-sm">
-        <div className="flex items-center p-4 space-x-4">
+        <div className=" items-center p-4 space-x-4">
           <Link
             className="text-sm link link-hover font-mono flex items-center hover:opacity-60 gap-2"
             href={"/"}
           >
             <FaArrowLeftLong />
-            Back
+            <AuroraText>Back</AuroraText>
           </Link>
           <div className="flex items-center gap-2 text-xl">
             <CgWebsite />

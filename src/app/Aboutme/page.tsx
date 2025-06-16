@@ -7,17 +7,18 @@ import { FaGraduationCap } from "react-icons/fa6";
 import { BlurFade } from "@/components/magicui/blur-fade";
 import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
+import { AuroraText } from "@/components/magicui/aurora-text";
 function Aboutme() {
   return (
     <>
       <div className="max-w-4xl m-auto  rounded-sm">
-        <div className="flex items-center p-4 space-x-4">
+        <div className=" items-center p-4 space-x-4">
           <Link
             className="text-sm link link-hover font-mono flex items-center hover:opacity-60 gap-2"
             href={"/"}
           >
             <FaArrowLeftLong />
-            Back
+           <AuroraText>Back</AuroraText>
           </Link>
           <div className="flex items-center gap-2 text-xl">
             <IoBookSharp></IoBookSharp>
