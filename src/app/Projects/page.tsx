@@ -11,6 +11,7 @@ import Card from "../Components/Card";
 import Link from "next/link";
 import Image from "next/image";
 import { AuroraText } from "@/components/magicui/aurora-text";
+import { FaExternalLinkAlt } from "react-icons/fa";
 function Projects() {
   return (
     <>
@@ -39,23 +40,27 @@ function Projects() {
                     </span>
                     Cometalk
                   </div>
-                  
                 </div>
               }
               description={`Real-time messaging system with live chat functionality`}
               pic={
                 <Image
                   className="object-cover"
-                  src="/image.png"
+                  src="/cometalk.png"
                   height={500}
                   width={500}
                   alt="Todo"
                 />
               }
               link={
-                <a className="link link-hover font-mono" href="#">
-                  Visit
-                </a>
+                <Badge variant="outline">
+                  <a
+                    className="flex items-center justify-center gap-1"
+                    href="https://cometalk.vercel.app/"
+                  >
+                    Visit <FaExternalLinkAlt size={10} />
+                  </a>
+                </Badge>
               }
               badge={
                 <>
@@ -77,7 +82,6 @@ function Projects() {
                     </span>
                     MemoLeaf
                   </div>
-                 
                 </div>
               }
               description={`A simple note-taking app, It lets users write, save, and 
@@ -93,12 +97,14 @@ function Projects() {
                 />
               }
               link={
-                <a
-                  className="link link-hover font-mono"
-                  href="https://memoleaf-ph.vercel.app/login"
-                >
-                  Visit
-                </a>
+                <Badge variant="outline">
+                  <a
+                    className="flex items-center justify-center gap-2"
+                    href="https://memoleaf-ph.vercel.app/login"
+                  >
+                    Visit <FaExternalLinkAlt size={10} />
+                  </a>
+                </Badge>
               }
               badge={
                 <>
@@ -120,7 +126,6 @@ function Projects() {
                     </span>
                     Forcasa
                   </div>
-                 
                 </div>
               }
               description={`Im developing a weather app using React and the OpenWeather API to provide real-time weather updates with an intuitive user interface`}
@@ -134,12 +139,14 @@ function Projects() {
                 />
               }
               link={
-                <a
-                  className="link link-hover font-mono"
-                  href="https://forcasa.vercel.app/"
-                >
-                  Visit
-                </a>
+                <Badge variant="outline">
+                  <a
+                    className="flex items-center justify-center gap-2"
+                    href="https://forcasa.vercel.app/"
+                  >
+                    Visit <FaExternalLinkAlt size={10} />
+                  </a>
+                </Badge>
               }
               badge={
                 <>
@@ -161,7 +168,6 @@ function Projects() {
                     </span>
                     Coffee Shop
                   </div>
-                
                 </div>
               }
               description={`My Simple landing page for Fikashop using React `}
@@ -174,7 +180,16 @@ function Projects() {
                   alt="Fika"
                 />
               }
-              link={<a href="https://fika-v1.vercel.app/">Visit</a>}
+              link={
+                <Badge variant="outline">
+                  <a
+                    className="flex items-center justify-center gap-2"
+                    href="https://fika-v1.vercel.app/"
+                  >
+                    Visit <FaExternalLinkAlt size={10} />
+                  </a>
+                </Badge>
+              }
               badge={
                 <>
                   <Badge>React</Badge>

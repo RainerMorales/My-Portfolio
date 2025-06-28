@@ -10,6 +10,7 @@ import { BlurFade } from "@/components/magicui/blur-fade";
 import { AuroraText } from "@/components/magicui/aurora-text";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { CgWebsite } from "react-icons/cg";
+import { FaLinkedin } from "react-icons/fa";
 import Card from "./Components/Card";
 
 export default function Home() {
@@ -34,10 +35,13 @@ export default function Home() {
           </div>
           <div className="text-md opacity-80">Bataan,Philippines</div>
           <div className="flex justify-center mt-6 gap-4">
+            <a href="https://www.linkedin.com/in/rainermorales/">
+              <FaLinkedin size={34} />
+            </a>
             <a href="https://github.com/RainerMorales">
               <FaSquareGithub size={34} />
             </a>
-            <a href="https://www.facebook.com/Ka.RainerM02">
+            <a href="https://www.facebook.com/ka.rainerrr">
               <FaFacebookSquare size={34} />
             </a>
             <a href="https://www.instagram.com/ka.rainerr?igsh=MWw1dXVqbGtwd2xsdQ==">
