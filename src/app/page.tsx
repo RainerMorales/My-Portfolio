@@ -12,7 +12,7 @@ import { FaArrowRightLong } from "react-icons/fa6";
 import { CgWebsite } from "react-icons/cg";
 import { FaLinkedin } from "react-icons/fa";
 import Card from "./Components/Card";
-
+import { FaExternalLinkAlt } from "react-icons/fa";
 export default function Home() {
   return (
     <>
@@ -54,7 +54,7 @@ export default function Home() {
         <BlurFade
           delay={0.15}
           inView
-          className="lg:col-span-3  space-y-4 p-6 border rounded-md shadow  "
+          className="lg:col-span-3  space-y-4 p-6 border rounded-md shadow-md  "
         >
           <div className="flex items-center justify-between ">
             <div className="font-bold text-xl flex items-center gap-2">
@@ -70,19 +70,19 @@ export default function Home() {
             </Link>
           </div>
           <p className="opacity-80">
-            Hi, Im Rainer Morales, a recent Information Technology graduate with
-            internship experience in technical support. I enjoy solving problems
-            using technology and learning new tools like React and Firebase. My
-            goal is to grow as a front-end developer and create user-friendly
-            web applications that make peoples lives easier. Im passionate about
-            continuous learning and excited to contribute to innovative tech
-            projects.
+            Hi, Im Rainer Morales, a recent BS in Information Technology
+            graduate with internship experience in technical support. I enjoy
+            solving problems using technology and learning new tools like React
+            and Firebase. My goal is to grow as a front-end developer and create
+            user-friendly web applications that make peoples lives easier. Im
+            passionate about continuous learning and excited to contribute to
+            innovative tech projects.
           </p>
         </BlurFade>
         <BlurFade
           delay={0.15 * 2}
           inView
-          className="lg:col-span-1 lg:row-span-2 space-y-4 p-6 border rounded-md shadow  "
+          className="lg:col-span-1 lg:row-span-2 space-y-4 p-6 border rounded-md shadow-md  "
         >
           <h1 className="font-bold text-xl flex items-center gap-2">
             <FaLaptopCode />
@@ -133,7 +133,7 @@ export default function Home() {
         <BlurFade
           delay={0.15 * 4}
           inView
-          className="lg:col-span-2 lg:row-span-2 p-2 border rounded-md shadow"
+          className="lg:col-span-2 lg:row-span-2 p-2 border rounded-md shadow-md"
         >
           <div className="flex items-center justify-between p-4">
             <div className="flex items-center gap-2 text-xl  font-bold">
@@ -167,7 +167,16 @@ export default function Home() {
                 alt="TodoNow"
               />
             }
-            link={<a href="https://memoleaf-ph.vercel.app/login">Visit</a>}
+            link={
+              <Badge variant="outline">
+                <a
+                  className="flex items-center justify-center gap-2"
+                  href="https://memoleaf-ph.vercel.app/login"
+                >
+                  Visit <FaExternalLinkAlt size={10} />
+                </a>
+              </Badge>
+            }
             badge={
               <>
                 <Badge>React</Badge>
