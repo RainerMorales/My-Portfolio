@@ -3,7 +3,7 @@ import Image from "next/image";
 import { FaFacebookSquare } from "react-icons/fa";
 import { FaSquareGithub } from "react-icons/fa6";
 import { FaSquareInstagram } from "react-icons/fa6";
-import { FaLaptopCode } from "react-icons/fa";
+import { HiCodeBracketSquare } from "react-icons/hi2";
 import { IoBookSharp } from "react-icons/io5";
 import { Badge } from "@/components/ui/badge";
 import { BlurFade } from "@/components/magicui/blur-fade";
@@ -11,8 +11,8 @@ import { AuroraText } from "@/components/magicui/aurora-text";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { CgWebsite } from "react-icons/cg";
 import { FaLinkedin } from "react-icons/fa";
-import Card from "./Components/Card";
-import { FaExternalLinkAlt } from "react-icons/fa";
+import { MdWork } from "react-icons/md";
+import Projects from "./Projects/page";
 export default function Home() {
   return (
     <>
@@ -23,17 +23,18 @@ export default function Home() {
         <div className="m-auto">
           <Image
             className="rounded-full border-4 "
-            src="/Profile.jpg"
+            src="/profilepic.jpg"
             width={200}
             height={80}
             alt="profile"
           ></Image>
         </div>
         <div className="text-center">
-          <div className="text-4xl font-bold ">
+          <div className="text-4xl font-bold ">Hi! I'm Rainer👋</div>
+          <div className="text-2xl font-bold">
             Web <AuroraText> Developer</AuroraText>
           </div>
-          <div className="text-md opacity-80">Bataan,Philippines</div>
+          <div className="text-sm opacity-80">Bataan,Philippines</div>
           <div className="flex justify-center mt-6 gap-4">
             <a href="https://www.linkedin.com/in/rainermorales/">
               <FaLinkedin size={34} />
@@ -50,11 +51,11 @@ export default function Home() {
           </div>
         </div>
       </BlurFade>
-      <div className="mt-20 p-4 grid grid-cols-1 lg:grid-cols-3 lg:grid-row-3 gap-4 max-w-4xl m-auto ">
+      <div className="mt-20 p-2 grid lg:grid-cols-4 md:grid-cols-4 sm:grid-cols-4 grid-cols-1 gap-4 max-w-4xl m-auto ">
         <BlurFade
           delay={0.15}
           inView
-          className="lg:col-span-3  space-y-4 p-6 border rounded-md shadow-md  "
+          className="col-span-4  space-y-4 p-6  rounded-md border "
         >
           <div className="flex items-center justify-between ">
             <div className="font-bold text-xl flex items-center gap-2">
@@ -80,16 +81,79 @@ export default function Home() {
           </p>
         </BlurFade>
         <BlurFade
+          delay={0.15}
+          inView
+          className="lg:col-span-2 md:col-span-2 sm:col-span-2  col-span-4 space-y-4 p-6 rounded-md border   "
+        >
+          <div className="flex items-center justify-between ">
+            <div className="font-bold text-xl flex items-center gap-2">
+              <MdWork />
+              Education
+            </div>
+          </div>
+          <div className="flex space-x-4 items-center">
+            <Image
+              className="rounded-full border"
+              src="/eastwoods.jpg"
+              width={50}
+              height={100}
+              alt="profile"
+            ></Image>
+            <div>
+              <div className="">
+                <div className="text-sm font-bold">
+                  Easwoods Professional College of Science and Technology
+                </div>
+                <div className="text-sm opacity-70">
+                  Bachelor of Science in Information Technology
+                </div>
+                <div className="text-sm opacity-70">2020 - 2024</div>
+              </div>
+            </div>
+          </div>
+        </BlurFade>
+        <BlurFade
+          delay={0.15}
+          inView
+          className="lg:col-span-2 md:col-span-2 sm:col-span-2  col-span-4 space-y-4 p-6 rounded-md border   "
+        >
+          <div className="flex items-center justify-between ">
+            <div className="font-bold text-xl flex items-center gap-2">
+              <MdWork />
+              Work Experience
+            </div>
+          </div>
+          <div className="flex space-x-4 items-center">
+            <Image
+              className="rounded-full border"
+              src="/centromedico.jpg"
+              width={50}
+              height={100}
+              alt="profile"
+            ></Image>
+            <div>
+              <div className="">
+                <div className="text-sm font-bold">
+                  Centro Medico De Santisimo Rosario
+                </div>
+                <div className="text-sm opacity-70">
+                  Technical Support Intern
+                </div>
+                <div className="text-sm opacity-70">March 2024 - June 2024</div>
+              </div>
+            </div>
+          </div>
+        </BlurFade>
+        <BlurFade
           delay={0.15 * 2}
           inView
-          className="lg:col-span-1 lg:row-span-2 space-y-4 p-6 border rounded-md shadow-md  "
+          className="col-span-4 space-y-4 p-6  rounded-md  border  "
         >
           <h1 className="font-bold text-xl flex items-center gap-2">
-            <FaLaptopCode />
+            <HiCodeBracketSquare />
             Tech Stack
           </h1>
           <div className="space-x-2">
-            <span className="opacity-80">Front-End</span>
             <ul className="flex flex-wrap gap-2 mt-1">
               {[
                 "HTML",
@@ -98,33 +162,12 @@ export default function Home() {
                 "Typescript",
                 "Tailwind CSS",
                 "Bootstrap",
-                "React",
+                "React JS",
                 "Next JS",
                 "Firebase",
               ].map((tool) => (
                 <li className="text-center" key={tool}>
-                  <Badge className="">{tool}</Badge>
-                </li>
-              ))}
-            </ul>
-          </div>
-          <div className="space-x-2">
-            <span className="opacity-80 ">Developer Tools</span>
-            <ul className="flex flex-wrap gap-2 mt-1">
-              {[
-                "Git",
-                "GitHub",
-                "VS Code",
-                "NPM",
-                "Vercel",
-                "Magic UI",
-                "Daisy UI",
-                "Material UI",
-                "Framer Motion",
-                "React Bits",
-              ].map((tool) => (
-                <li className="text-center" key={tool}>
-                  <Badge className="">{tool}</Badge>
+                  <Badge variant={"outline"} className="">{tool}</Badge>
                 </li>
               ))}
             </ul>
@@ -133,59 +176,13 @@ export default function Home() {
         <BlurFade
           delay={0.15 * 4}
           inView
-          className="lg:col-span-2 lg:row-span-2 p-2 border rounded-md shadow-md"
+          className="col-span-4 lg:row-span-2 p-2 "
         >
-          <div className="flex items-center justify-between p-4">
-            <div className="flex items-center gap-2 text-xl  font-bold">
-              <CgWebsite />
-              Recent Projects
-            </div>
-            <Link
-              className="text-sm flex items-center gap-2 link link-hover font-mono hover:opacity-60"
-              href={"/Projects"}
-            >
-              <AuroraText> View All</AuroraText>
-              <FaArrowRightLong />
-            </Link>
+          <div className="flex items-center gap-2 text-xl  font-bold">
+            <CgWebsite />
+            Recent Projects
           </div>
-          <Card
-            names={
-              <div className="flex justify-between items-center w-full">
-                <div>MemoLeaf</div>
-              </div>
-            }
-            description={`A simple note-taking app built with React, 
-                Tailwind CSS, ShadCN, and Firebase. It lets users write, save, and 
-                manage notes with a clean, responsive design. Notes are saved in the 
-                cloud using Firebase`}
-            pic={
-              <Image
-                className=""
-                src="/memoleaf.png"
-                height={500}
-                width={500}
-                alt="TodoNow"
-              />
-            }
-            link={
-              <Badge variant="outline">
-                <a
-                  className="flex items-center justify-center gap-2"
-                  href="https://memoleaf-ph.vercel.app/login"
-                >
-                  Visit <FaExternalLinkAlt size={10} />
-                </a>
-              </Badge>
-            }
-            badge={
-              <>
-                <Badge>React</Badge>
-                <Badge>Tailwind</Badge>
-                <Badge>Firebase</Badge>
-                <Badge>Shadcn</Badge>
-              </>
-            }
-          ></Card>
+          <Projects />
         </BlurFade>
       </div>
     </>

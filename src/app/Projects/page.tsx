@@ -1,35 +1,19 @@
 "use client";
 import { BlurFade } from "@/components/magicui/blur-fade";
-import { FaArrowLeftLong } from "react-icons/fa6";
-import { CgWebsite } from "react-icons/cg";
+import { FaGithub } from "react-icons/fa6";
 import { Badge } from "@/components/ui/badge";
 import { FaLeaf } from "react-icons/fa";
 import { GiTalk } from "react-icons/gi";
 import { TiWeatherWindyCloudy } from "react-icons/ti";
 import { FiCoffee } from "react-icons/fi";
 import Card from "../Components/Card";
-import Link from "next/link";
 import Image from "next/image";
-import { AuroraText } from "@/components/magicui/aurora-text";
 import { FaExternalLinkAlt } from "react-icons/fa";
 function Projects() {
   return (
     <>
       <div className="max-w-4xl m-auto  rounded-sm">
-        <div className=" items-center p-4 space-x-4">
-          <Link
-            className="text-sm link link-hover font-mono flex items-center hover:opacity-60 gap-2"
-            href={"/"}
-          >
-            <FaArrowLeftLong />
-            <AuroraText>Back</AuroraText>
-          </Link>
-          <div className="flex items-center gap-2 text-xl">
-            <CgWebsite />
-            Recent Projects
-          </div>
-        </div>
-        <div className="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 p-4   gap-4 ">
+        <div className="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1  ">
           <BlurFade inView>
             <Card
               names={
@@ -53,21 +37,38 @@ function Projects() {
                 />
               }
               link={
-                <Badge variant="outline">
-                  <a
-                    className="flex items-center justify-center gap-1"
-                    href="https://cometalk.vercel.app/"
-                  >
-                    Visit <FaExternalLinkAlt size={10} />
-                  </a>
-                </Badge>
+                <div className="space-x-2">
+                  <Badge>
+                    <a
+                      className="flex items-center justify-center gap-1"
+                      href="https://cometalk.vercel.app/"
+                    >
+                      Github <FaGithub size={10} />
+                    </a>
+                  </Badge>
+                  <Badge>
+                    <a
+                      className="flex items-center justify-center gap-1"
+                      href="https://cometalk.vercel.app/"
+                    >
+                      Visit <FaExternalLinkAlt size={10} />
+                    </a>
+                  </Badge>
+                </div>
               }
               badge={
                 <>
-                  <Badge>Next js</Badge>
-                  <Badge>Tailwind</Badge>
-                  <Badge>Firebase</Badge>
-                  <Badge>Shadcn</Badge>
+                  {/* <Badge variant={"outline"}>Next js</Badge>
+                  <Badge variant={"outline"}>Tailwind</Badge>
+                  <Badge variant={"outline"}>Firebase</Badge>
+                  <Badge variant={"outline"}>Shadcn</Badge> */}
+                  {["Next js","Tailwind","Firebase","Shadcn"].map((badge,key)=>{
+                    <li key={key}>
+                      <Badge>
+                        {badge}
+                      </Badge>
+                    </li>
+                  })}
                 </>
               }
             ></Card>
