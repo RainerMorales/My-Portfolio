@@ -52,7 +52,9 @@ export default function Home() {
           </div>
         </div>
         <div className="flex justify-center items-center">
-          <ShimmerButton className="text-sm">Download CV</ShimmerButton>
+          <a download  href="/Resume_Rainer-Morales.pdf">
+            <ShimmerButton className="text-sm">Download CV</ShimmerButton>
+          </a>
         </div>
       </BlurFade>
       <div className="mt-20 p-2 grid lg:grid-cols-4 md:grid-cols-4 sm:grid-cols-4 grid-cols-1 gap-4 max-w-4xl m-auto ">
@@ -67,10 +69,10 @@ export default function Home() {
               About
             </div>
             <Link
-              className="text-sm flex items-center gap-2 link link-hover font-mono hover:opacity-60"
+              className="text-xs flex items-center gap-1 link link-hover font-mono hover:opacity-60 opacity-80"
               href={"/Aboutme"}
             >
-              <AuroraText> View All</AuroraText>
+              Certificates
               <FaArrowRightLong />
             </Link>
           </div>
