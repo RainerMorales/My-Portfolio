@@ -52,7 +52,7 @@ export default function Home() {
           </div>
         </div>
         <div className="flex justify-center items-center">
-          <a download  href="/Resume_Rainer-Morales.pdf">
+          <a download href="/RainerMorales_ReactDeveloper.pdf">
             <ShimmerButton className="text-sm">Download CV</ShimmerButton>
           </a>
         </div>
