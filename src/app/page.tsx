@@ -12,6 +12,7 @@ import { FaArrowRightLong } from "react-icons/fa6";
 import { CgWebsite } from "react-icons/cg";
 import { FaLinkedin } from "react-icons/fa";
 import { MdWork } from "react-icons/md";
+import { ShimmerButton } from "@/components/magicui/shimmer-button";
 import Projects from "./Projects/page";
 export default function Home() {
   return (
@@ -30,7 +31,7 @@ export default function Home() {
           ></Image>
         </div>
         <div className="text-center">
-          <div className="text-4xl font-bold ">Hi! I'm Rainer👋</div>
+          <div className="text-4xl font-bold ">Hi! I&apos;m Rainer👋</div>
           <div className="text-2xl font-bold">
             Web <AuroraText> Developer</AuroraText>
           </div>
@@ -50,6 +51,9 @@ export default function Home() {
             </a>
           </div>
         </div>
+        <div className="flex justify-center items-center">
+          <ShimmerButton className="text-sm">Download CV</ShimmerButton>
+        </div>
       </BlurFade>
       <div className="mt-20 p-2 grid lg:grid-cols-4 md:grid-cols-4 sm:grid-cols-4 grid-cols-1 gap-4 max-w-4xl m-auto ">
         <BlurFade
@@ -58,7 +62,7 @@ export default function Home() {
           className="col-span-4  space-y-4 p-6  rounded-md border "
         >
           <div className="flex items-center justify-between ">
-            <div className="font-bold text-xl flex items-center gap-2">
+            <div className="font-bold text-lg flex items-center gap-2">
               <IoBookSharp />
               About
             </div>
@@ -83,10 +87,10 @@ export default function Home() {
         <BlurFade
           delay={0.15}
           inView
-          className="lg:col-span-2 md:col-span-2 sm:col-span-2  col-span-4 space-y-4 p-6 rounded-md border   "
+          className="lg:col-span-2 md:col-span-2 sm:col-span-2  col-span-4 space-y-4 p-4 rounded-md border   "
         >
           <div className="flex items-center justify-between ">
-            <div className="font-bold text-xl flex items-center gap-2">
+            <div className="font-bold text-lg flex items-center gap-2">
               <MdWork />
               Education
             </div>
@@ -115,10 +119,10 @@ export default function Home() {
         <BlurFade
           delay={0.15}
           inView
-          className="lg:col-span-2 md:col-span-2 sm:col-span-2  col-span-4 space-y-4 p-6 rounded-md border   "
+          className="lg:col-span-2 md:col-span-2 sm:col-span-2  col-span-4 space-y-4 p-4 rounded-md border   "
         >
           <div className="flex items-center justify-between ">
-            <div className="font-bold text-xl flex items-center gap-2">
+            <div className="font-bold text-lg flex items-center gap-2">
               <MdWork />
               Work Experience
             </div>
@@ -147,9 +151,9 @@ export default function Home() {
         <BlurFade
           delay={0.15 * 2}
           inView
-          className="col-span-4 space-y-4 p-6  rounded-md  border  "
+          className="col-span-4 space-y-4 p-4  rounded-md  border  "
         >
-          <h1 className="font-bold text-xl flex items-center gap-2">
+          <h1 className="font-bold text-lg flex items-center gap-2">
             <HiCodeBracketSquare />
             Tech Stack
           </h1>
@@ -167,7 +171,9 @@ export default function Home() {
                 "Firebase",
               ].map((tool) => (
                 <li className="text-center" key={tool}>
-                  <Badge variant={"outline"} className="">{tool}</Badge>
+                  <Badge variant={"secondary"} className="">
+                    {tool}
+                  </Badge>
                 </li>
               ))}
             </ul>
@@ -178,7 +184,7 @@ export default function Home() {
           inView
           className="col-span-4 lg:row-span-2 p-2 "
         >
-          <div className="flex items-center gap-2 text-xl  font-bold">
+          <div className="flex items-center gap-2 text-lg  font-bold">
             <CgWebsite />
             Recent Projects
           </div>

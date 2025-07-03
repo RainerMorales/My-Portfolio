@@ -41,7 +41,7 @@ function Projects() {
                   <Badge>
                     <a
                       className="flex items-center justify-center gap-1"
-                      href="https://cometalk.vercel.app/"
+                      href="https://github.com/RainerMorales/Cometalk/"
                     >
                       Github <FaGithub size={10} />
                     </a>
@@ -51,24 +51,23 @@ function Projects() {
                       className="flex items-center justify-center gap-1"
                       href="https://cometalk.vercel.app/"
                     >
-                      Visit <FaExternalLinkAlt size={10} />
+                      Website
+                      <FaExternalLinkAlt size={10} />
                     </a>
                   </Badge>
                 </div>
               }
               badge={
                 <>
-                  {/* <Badge variant={"outline"}>Next js</Badge>
-                  <Badge variant={"outline"}>Tailwind</Badge>
-                  <Badge variant={"outline"}>Firebase</Badge>
-                  <Badge variant={"outline"}>Shadcn</Badge> */}
-                  {["Next js","Tailwind","Firebase","Shadcn"].map((badge,key)=>{
-                    <li key={key}>
-                      <Badge>
-                        {badge}
-                      </Badge>
-                    </li>
-                  })}
+                  <ul className="flex space-x-2">
+                    {["Next js", "Tailwind", "Firebase", "Shadcn"].map(
+                      (badge, li) => (
+                        <li key={li}>
+                          <Badge variant={"secondary"}>{badge}</Badge>
+                        </li>
+                      )
+                    )}
+                  </ul>
                 </>
               }
             ></Card>
@@ -98,21 +97,37 @@ function Projects() {
                 />
               }
               link={
-                <Badge variant="outline">
-                  <a
-                    className="flex items-center justify-center gap-2"
-                    href="https://memoleaf-ph.vercel.app/login"
-                  >
-                    Visit <FaExternalLinkAlt size={10} />
-                  </a>
-                </Badge>
+                <div className="space-x-2">
+                  <Badge>
+                    <a
+                      className="flex items-center justify-center gap-1"
+                      href="https://github.com/RainerMorales/Memoleaf"
+                    >
+                      Github <FaGithub size={10} />
+                    </a>
+                  </Badge>
+                  <Badge>
+                    <a
+                      className="flex items-center justify-center gap-1"
+                      href="https://memoleaf-ph.vercel.app/login"
+                    >
+                      Website
+                      <FaExternalLinkAlt size={10} />
+                    </a>
+                  </Badge>
+                </div>
               }
               badge={
                 <>
-                  <Badge>React</Badge>
-                  <Badge>Tailwind</Badge>
-                  <Badge>Firebase</Badge>
-                  <Badge>Shadcn</Badge>
+                  <ul className="flex space-x-2">
+                    {["React js", "Tailwind", "Firebase", "Shadcn"].map(
+                      (badge, li) => (
+                        <li key={li}>
+                          <Badge variant={"secondary"}>{badge}</Badge>
+                        </li>
+                      )
+                    )}
+                  </ul>
                 </>
               }
             ></Card>
@@ -140,21 +155,37 @@ function Projects() {
                 />
               }
               link={
-                <Badge variant="outline">
-                  <a
-                    className="flex items-center justify-center gap-2"
-                    href="https://forcasa.vercel.app/"
-                  >
-                    Visit <FaExternalLinkAlt size={10} />
-                  </a>
-                </Badge>
+                <div className="space-x-2">
+                  <Badge>
+                    <a
+                      className="flex items-center justify-center gap-1"
+                      href="https://github.com/RainerMorales/Forecasa"
+                    >
+                      Github <FaGithub size={10} />
+                    </a>
+                  </Badge>
+                  <Badge>
+                    <a
+                      className="flex items-center justify-center gap-1"
+                      href="https://forcasa.vercel.app/"
+                    >
+                      Website
+                      <FaExternalLinkAlt size={10} />
+                    </a>
+                  </Badge>
+                </div>
               }
               badge={
                 <>
-                  <Badge>React</Badge>
-                  <Badge>Tailwind</Badge>
-                  <Badge>Daisy UI</Badge>
-                  <Badge>Rest Api</Badge>
+                  <ul className="flex space-x-2">
+                    {["Next js", "Tailwind", "Firebase", "Shadcn"].map(
+                      (badge, li) => (
+                        <li key={li}>
+                          <Badge variant={"secondary"}>{badge}</Badge>
+                        </li>
+                      )
+                    )}
+                  </ul>
                 </>
               }
             ></Card>
@@ -182,20 +213,37 @@ function Projects() {
                 />
               }
               link={
-                <Badge variant="outline">
-                  <a
-                    className="flex items-center justify-center gap-2"
-                    href="https://fika-v1.vercel.app/"
-                  >
-                    Visit <FaExternalLinkAlt size={10} />
-                  </a>
-                </Badge>
+                <div className="space-x-2">
+                  <Badge>
+                    <a
+                      className="flex items-center justify-center gap-1"
+                      href="https://github.com/RainerMorales/Fika"
+                    >
+                      Github <FaGithub size={10} />
+                    </a>
+                  </Badge>
+                  <Badge>
+                    <a
+                      className="flex items-center justify-center gap-1"
+                      href="https://fika-v1.vercel.app/"
+                    >
+                      Website
+                      <FaExternalLinkAlt size={10} />
+                    </a>
+                  </Badge>
+                </div>
               }
               badge={
                 <>
-                  <Badge>React</Badge>
-                  <Badge>Tailwind</Badge>
-                  <Badge>Magic UI</Badge>
+                  <ul className="flex space-x-2">
+                    {["Next js", "Tailwind", "Firebase", "Shadcn"].map(
+                      (badge, li) => (
+                        <li key={li}>
+                          <Badge variant={"secondary"}>{badge}</Badge>
+                        </li>
+                      )
+                    )}
+                  </ul>
                 </>
               }
             ></Card>
