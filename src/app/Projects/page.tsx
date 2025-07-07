@@ -30,7 +30,7 @@ function Projects() {
               pic={
                 <Image
                   className="object-cover"
-                  src="/cometalk.png"
+                  src="/talk.png"
                   height={500}
                   width={500}
                   alt="Todo"
