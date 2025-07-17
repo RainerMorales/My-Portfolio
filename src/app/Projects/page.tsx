@@ -248,6 +248,60 @@ function Projects() {
               }
             ></Card>
           </BlurFade>
+          <BlurFade delay={0.15 * 2} inView>
+            <Card
+              names={
+                <div className="flex justify-between items-center w-full">
+                  <div className="flex items-center gap-2">Alibata</div>
+                </div>
+              }
+              description={`Alibata Games `}
+              pic={
+                <Image
+                  className="object-cover"
+                  src="/"
+                  height={500}
+                  width={500}
+                  alt="Fika"
+                />
+              }
+              link={
+                <div className="space-x-2 ">
+                  <Badge className="cursor-not-allowed">
+                    <a
+                      className="flex items-center justify-center gap-1 cursor-not-allowed"
+                      href="/"
+                    >
+                      Github <FaGithub size={10} />
+                    </a>
+                  </Badge>
+                  <Badge variant={"destructive"} className="cursor-not-allowed">
+                    {/* <a
+                      className="flex items-center justify-center gap-1"
+                      href="https://fika-v1.vercel.app/"
+                    >
+                      Website
+                      <FaExternalLinkAlt size={10} />
+                    </a> */}
+                    Ongoing
+                  </Badge>
+                </div>
+              }
+              badge={
+                <>
+                  <ul className="flex space-x-2">
+                    {["Next js", "Tailwind", "Firebase", "Shadcn"].map(
+                      (badge, li) => (
+                        <li key={li}>
+                          <Badge variant={"secondary"}>{badge}</Badge>
+                        </li>
+                      )
+                    )}
+                  </ul>
+                </>
+              }
+            ></Card>
+          </BlurFade>
         </div>
       </div>
     </>
