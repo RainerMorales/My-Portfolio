@@ -31,11 +31,13 @@ export default function Home() {
           ></Image>
         </div>
         <div className="text-center">
-          <div className="text-4xl font-bold ">Hi! I&apos;m Rainer👋</div>
-          <div className="text-2xl font-bold">
-            Web <AuroraText> Developer</AuroraText>
+          <div className="text-4xl font-bold">Hi! I&apos;m Rainer👋</div>
+          <div className="m-2">
+            <div className="text-lg">
+              <AuroraText> Front-End </AuroraText> Developer
+            </div>
+            <div className="text-lg opacity-80">Bataan, Philippines</div>
           </div>
-          <div className="text-sm opacity-80">Bataan,Philippines</div>
           <div className="flex justify-center mt-6 gap-4">
             <a href="https://www.linkedin.com/in/rainermorales/">
               <FaLinkedin size={34} />

@@ -6,6 +6,7 @@ import { FaLeaf } from "react-icons/fa";
 import { GiTalk } from "react-icons/gi";
 import { TiWeatherWindyCloudy } from "react-icons/ti";
 import { FiCoffee } from "react-icons/fi";
+import Link from "next/link";
 import Card from "../Components/Card";
 import Image from "next/image";
 import { FaExternalLinkAlt } from "react-icons/fa";
@@ -26,7 +27,8 @@ function Projects() {
                   </div>
                 </div>
               }
-              description={`Real-time messaging system with live chat functionality`}
+              description={`Built a responsive and interactive real-time messaging platform using modern 
+                frontend and backend technologies.`}
               pic={
                 <Image
                   className="object-cover"
@@ -39,21 +41,21 @@ function Projects() {
               link={
                 <div className="space-x-2">
                   <Badge>
-                    <a
+                    <Link
                       className="flex items-center justify-center gap-1"
                       href="https://github.com/RainerMorales/Cometalk/"
                     >
                       Github <FaGithub size={10} />
-                    </a>
+                    </Link>
                   </Badge>
                   <Badge>
-                    <a
+                    <Link
                       className="flex items-center justify-center gap-1"
                       href="https://cometalk.vercel.app/"
                     >
                       Website
                       <FaExternalLinkAlt size={10} />
-                    </a>
+                    </Link>
                   </Badge>
                 </div>
               }
@@ -99,21 +101,21 @@ function Projects() {
               link={
                 <div className="space-x-2">
                   <Badge>
-                    <a
+                    <Link
                       className="flex items-center justify-center gap-1"
                       href="https://github.com/RainerMorales/Memoleaf"
                     >
                       Github <FaGithub size={10} />
-                    </a>
+                    </Link>
                   </Badge>
                   <Badge>
-                    <a
+                    <Link
                       className="flex items-center justify-center gap-1"
                       href="https://memoleaf-ph.vercel.app/login"
                     >
                       Website
                       <FaExternalLinkAlt size={10} />
-                    </a>
+                    </Link>
                   </Badge>
                 </div>
               }
@@ -157,21 +159,21 @@ function Projects() {
               link={
                 <div className="space-x-2">
                   <Badge>
-                    <a
+                    <Link
                       className="flex items-center justify-center gap-1"
                       href="https://github.com/RainerMorales/Forecasa"
                     >
                       Github <FaGithub size={10} />
-                    </a>
+                    </Link>
                   </Badge>
                   <Badge>
-                    <a
+                    <Link
                       className="flex items-center justify-center gap-1"
                       href="https://forcasa.vercel.app/"
                     >
                       Website
                       <FaExternalLinkAlt size={10} />
-                    </a>
+                    </Link>
                   </Badge>
                 </div>
               }
@@ -202,7 +204,8 @@ function Projects() {
                   </div>
                 </div>
               }
-              description={`My Simple landing page for Fikashop using React `}
+              description={`Developed a clean and responsive landing page for Fikashop using React.
+                 The page showcases the brands products and highlights key selling points through modern UI elements and smooth user experience. `}
               pic={
                 <Image
                   className="object-cover"
@@ -215,21 +218,21 @@ function Projects() {
               link={
                 <div className="space-x-2">
                   <Badge>
-                    <a
+                    <Link
                       className="flex items-center justify-center gap-1"
                       href="https://github.com/RainerMorales/Fika"
                     >
                       Github <FaGithub size={10} />
-                    </a>
+                    </Link>
                   </Badge>
                   <Badge>
-                    <a
+                    <Link
                       className="flex items-center justify-center gap-1"
                       href="https://fika-v1.vercel.app/"
                     >
                       Website
                       <FaExternalLinkAlt size={10} />
-                    </a>
+                    </Link>
                   </Badge>
                 </div>
               }
@@ -255,7 +258,7 @@ function Projects() {
                   <div className="flex items-center gap-2">Alibata</div>
                 </div>
               }
-              description={`Alibata Games `}
+              description={`A fun and educational web-based game designed to help users learn the ancient Filipino script, Baybayin (Alibata).`}
               pic={
                 <Image
                   className="object-cover"
@@ -268,12 +271,12 @@ function Projects() {
               link={
                 <div className="space-x-2 ">
                   <Badge className="cursor-not-allowed">
-                    <a
+                    <Link
                       className="flex items-center justify-center gap-1 cursor-not-allowed"
                       href="/"
                     >
                       Github <FaGithub size={10} />
-                    </a>
+                    </Link>
                   </Badge>
                   <Badge variant={"destructive"} className="cursor-not-allowed">
                     {/* <a
