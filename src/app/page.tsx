@@ -31,7 +31,7 @@ export default function Home() {
           ></Image>
         </div>
         <div className="text-center">
-          <div className="text-4xl font-bold">Hi! I&apos;m Rainer👋</div>
+          {/* <div className="text-4xl font-bold">Hi! I&apos;m Rainer👋</div> */}
           <div className="m-2">
             <div className="text-lg">
               <AuroraText> Front-End </AuroraText> Developer
