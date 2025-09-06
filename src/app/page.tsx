@@ -24,7 +24,7 @@ export default function Home() {
         <div className="m-auto">
           <Image
             className="rounded-full border-4 "
-            src="/profile.jpg"
+            src="/Profile.jpg"
             width={200}
             height={80}
             alt="profile"
