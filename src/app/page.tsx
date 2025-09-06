@@ -24,19 +24,19 @@ export default function Home() {
         <div className="m-auto">
           <Image
             className="rounded-full border-4 "
-            src="/profilepic.jpg"
+            src="/profile.jpg"
             width={200}
             height={80}
             alt="profile"
           ></Image>
         </div>
         <div className="text-center">
-          <div className="text-4xl font-bold">Hi! I&apos;m Rainer👋</div>
+         
           <div className="m-2">
-            <div className="text-lg font-bold">
-              <AuroraText> Front-End </AuroraText> Developer
+            <div className="text-4xl font-bold">
+              <AuroraText>Web</AuroraText> Developer
             </div>
-            <div className="text-lg opacity-80">Bataan, Philippines</div>
+            <div className="text-sm opacity-80">Bataan, Philippines</div>
           </div>
           <div className="flex justify-center mt-6 gap-4">
             <a href="https://www.linkedin.com/in/rainermorales/">
